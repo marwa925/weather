@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather</title>
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-body-tertiary py-5">
+        <div class="container">
+          <a class="navbar-brand text-white" href="#">
+            <img src="imgs/logo.png" alt="" class="pe-2">
+            <div class="d-inline-block align-middle lh-1 ">
+                <h1 class="fs-5 mb-0 pb-0">Weather</h1>
+                <small class="">tagline goes here</small>
+            </div>
+          </a>
+          <button class="navbar-toggler text-white " type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon "></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                <a class="nav-link active  rounded-pill px-4 py-1" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-pill px-4 py-1" href="#">News</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-pill px-4 py-1" href="#">Live cameras</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-pill px-4 py-1" href="#">Photos</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link rounded-pill px-4 py-1" href="#">Contact</a>
+              </li>
+          </div>
+        </div>
+    </nav>
+
+    <header class="home d-flex ">
+        <form action="" class="container m-auto">
+            <div class="position-relative ">
+                <input type="text" placeholder="Find your location..." id="search" class="form-control ps-3 py-3 rounded-pill border-0">
+                <input type="button" id="submit" value="Find" class="rounded-pill px-5 py-1 border-0">
+            </div>
+        </form>
+    </header>
+    <div class="table container rounded text-muted mb-4">
+        <div class="row px-2">
+            <div class="col-md-4 items rounded">
+                <div class="inner d-flex justify-content-between rounded"><p id="dayOne"></p> <p id="monT"></p></div>
+                <p id="city" class="mt-3 px-4 fs-3"></p>
+                <span id="degreeOne" class=" fw-bolder text-white px-4" style="font-size:4rem ;"></span> <img  class=" ps-2 align-middle" style="width:35%;" id="imgOne"></img>
+                <p id="statusOne" class="mt-1 px-4  text-primary"></p>
+                <div class="px-4">
+                    <span class="me-3">
+                        <img src="imgs/icon-umberella.png" alt=""> 20%
+                    </span>
+                    <span class="me-3">
+                        <img src="imgs/icon-wind.png" alt=""> 18km/h
+                    </span>
+                    <span class="me-3">
+                        <img src="imgs/icon-compass.png" alt=""> East
+                    </span>
+                </div>
+            </div>
+            <div class="col-md-4 items layer rounded text-center">
+                <div class="inner rounded"><p id="dayTwo"></p> </div>
+                <img  class="w-25 fs-6 mt-4" id="imgTwo"></img>
+                <p id="degreeTwo" class="fs-5 fw-bolder mb-0"></p> 
+                <p id="degMin"></p>
+                <p class="mt-2 text-primary" id="statusTwo"></p>
+            </div>
+            <div class="col-md-4 items rounded text-center">
+                <div class="inner rounded"><p id="dayThree"></p></div>
+                <img id="imgThree" class="w-25 fs-6 mt-4"></img>
+                <p id="degreeThree" class="fs-5 fw-bolder mb-0"></p> 
+                <p id="minThree"></p>
+                <p class="mt-2 text-primary" id="statusThree"></p>
+
+                
+            </div>
+        </div>
+    </div>
+        
+    
+    
+    <footer>
+        <div class="container">
+            <div class="row g-3">
+                <div class="col-md-8">
+                    <div class="foot-inner">
+                        <form action="" class="">
+                            <div class="position-relative  ">
+                                <input type="email" placeholder="Enter email to subscribe..." class="form-control ps-3 py-3 rounded-pill border-0 w-100">
+                                <input type="button" value="Subscribe" class="rounded-pill px-4 py-1 border-0 ">
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-md-3   ">
+                    <div class="d-flex ico justify-content-between mt-2 offset-md-1">
+                         
+                            <i class="fa-brands fa-facebook-f rounded-circle icons"></i>
+                            <i class="fa-brands fa-twitter rounded-circle icons"></i>
+                            <i class="fa-brands fa-instagram rounded-circle icons"></i>
+                            <i class="fa-brands fa-google rounded-circle icons"></i>
+                       
+                    </div>
+                </div>
+            </div>
+            <p class="mt-5 container mb-0" style="color: #bfc1c8;">Copyright 2014 Company name. Designed by Themezy. All rights reserved</p>
+        </div>
+    </footer>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+</html>

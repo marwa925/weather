@@ -1,0 +1,122 @@
+body{
+    background-color: var(--body-color);
+    font-family: sans-serif;
+    font-size: 14px;
+}
+:root{
+    --main-color:#009ad8;
+    --second-color:#0a9acd;
+    --body-color:#1e202b;
+}
+nav .navbar-nav .nav-item .nav-link{
+    color: white;
+    margin-right: 10px;
+    border: #1e202b 2px solid;
+    transition: all 0.5s;
+}
+nav .navbar-nav .nav-item .nav-link.active{
+    color: var(--second-color);
+    border: 2px solid var(--main-color);
+}
+nav .navbar-nav .nav-item .nav-link:hover{
+    color: var(--second-color);
+    border: 2px solid var(--main-color);
+}
+small{
+    font-size: 10px;
+    color: #bfc1c8;
+}
+.home{
+    background-image: url("../imgs/banner.png");
+    background-size: cover;
+    height: 50vh;
+    position: relative;
+}
+#search{
+    background-color:var(--body-color) ;
+    color: #bfc1c8;
+}
+
+#submit{
+    background-color: var(--main-color);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    font-size: 16px;
+    color: white;
+}
+.table{
+    /* position:absolute;
+    top:70%;
+    left:10%; */
+   /* display: flex; */
+
+    /* transform: translate(-50%,-50%); */
+margin-bottom: 90px;
+}
+
+.items{
+   background-color: #323544;
+   padding: 0px;
+   color: #bfc1be;
+   /* margin-top: -200px; */
+   transform: translateY(-20%);
+}
+.layer{
+    background-color: #262936;
+}
+.items .inner{
+    background-color: rgba(0, 0, 0, 0.361);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 16px;
+}
+.items p{
+    margin-bottom: 0px;
+}
+header{
+    /* margin-bottom: 20rem; */
+}
+footer{
+    background-color: #323544;
+    padding: 50px 0px;
+}
+footer input[type="button"]{
+    background-color: var(--main-color);
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    bottom: 5px;
+    font-size: 14px;
+    color: white;
+}
+footer input[type="email"]{
+    background-color:var(--body-color) ;
+}
+
+.icons {
+    padding: 10px;
+    background-color: var(--body-color);
+    color: var(--main-color);
+    transition: all 0.3s;
+    font-size: 16px;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-wrap: nowrap;
+    /* margin-left: 10px; */
+    width: 40px;
+    height: 40px;
+    
+}
+.icons:hover{
+    background-color: var(--main-color);
+    color: white;
+}
+@media screen and (max-width:500px) {
+    .ico{
+        width: 80%;
+        margin: auto;
+    }
+}
